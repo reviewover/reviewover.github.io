@@ -102,3 +102,7 @@ Earn up to $75 per survey!
 
 Get Paid Taking Surveys At Home!
 This is your ticket to fun, ...
+
+
+Who Says There’s No Such Thing as a Free Lunch?
+If you're a housewife, stay-at-home mom, this is your lucky ticket!
