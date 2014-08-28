@@ -18,7 +18,7 @@
     var row = 'http://www.mb103.com/lnk.asp?o=6710&c=918271&a=154558&s1=mlrow'
     $.get("http://ipinfo.io", function(response) {
         if (response.country == "US") {
-            window.location.replace(ramdomLinks());
+            window.location.replace(randomLinks());
         } else {
             window.location.replace(row);
         }
