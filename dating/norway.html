@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+
+<head>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+    var randomLinks = function() {
+      var targets = [
+      'http://www.mb57.com/lnk.asp?o=6908&c=918271&a=154558&s1=mlcpn',
+      'http://www.mb102.com/lnk.asp?o=5679&c=918271&a=154558&s1=mlspn',
+      'http://www.mb102.com/lnk.asp?o=5878&c=918271&a=154558&s1=mlhn',
+      'http://www.mb01.com/lnk.asp?o=3940&c=918271&a=154558&s1=mlffn'
+      ];
+
+      var index = Math.floor(Math.random() * (targets.length - 0) + 0);
+      return targets[index];
+    };
+
+    var row = 'http://www.mb103.com/lnk.asp?o=6710&c=918271&a=154558&s1=mlrow'
+    $.get("http://ipinfo.io", function(response) {
+        if (response.country == "NO") {
+            window.location.replace(randomLinks());
+        } else {
+            window.location.replace(row);
+        }
+    }, "jsonp");
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
