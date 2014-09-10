@@ -292,28 +292,33 @@ a:focus, a:hover {
 *===========================================
 */
 
+#countdown {
+
+  padding-left:4em;
+}
 .countdown {
     text-align: center;
 }
 .is-countdown {
-    max-width: 750px;
+    /*max-width: 750px;*/
     margin: 0;
     width: 100%;
 }
 .countdown-row {
     display: block;
-    text-align: left;
+    text-align: center;
 }
 .countdown-section {
     display: block;
-    width: calc(23% - 20px);
+    width: calc(15% - 50px);
     margin: 10px;
+    margin-left: 1em;
     display: inline-block;
     position: relative;
     text-align: center;
 }
 .countdown-section:after {
-    content: "------------------";
+/*    content: "------------------";
     font-family: 'Roboto';
     font-size: 13px;
     line-height: 0;
@@ -327,7 +332,7 @@ a:focus, a:hover {
     -moz-transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
     -o-transform: rotate(90deg);
-    transform: rotate(90deg);
+    transform: rotate(90deg);*/
 }
 .countdown-section:last-child:after {
     display: none;

@@ -76,9 +76,8 @@ jQuery(document).ready(function() {
 
     jQuery(function () {
         var today = new Date();
-        today.setHours(today.getHours() + 4);
+        today.setMinutes(today.getMinutes() + 3);
         var austDay = new Date();
-        austDay = new Date('October 1, 2016 00:00:00');
         jQuery('#countdown').countdown({until: today, padZeroes: true});
 
         if (!mobile) {
