@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+    <link rel="icon" href="favicon.ico">
     <title>Thank You</title>
     <!-- Bootstrap core CSS -->
     <link href="http://oss.maxcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
@@ -31,6 +31,25 @@
         return false;
     }
     </script>
+    <style>
+    .callback,
+    .simple {
+        text-align: center;
+        font-size: 20px;
+        background: #27ae60;
+        padding: 0.5em 0.7em;
+        color: #ecf0f1;
+        margin-bottom: 50px;
+        -webkit-transition: background 0.5s ease-out;
+        transition: background 0.5s ease-out;
+    }
+    .callback {
+        cursor: pointer;
+    }
+    .ended {
+        background: #c0392b;
+    }
+    </style>
 </head>
 
 <body>
@@ -39,11 +58,12 @@
             <div class="col-sm-12 center">
                 <h1>Thank You</h1>
                 <p class="lead">
-                    I will send your report shortly, meanwhile you can enjoy this great offers
+                    I will send your report shortly, meanwhile you can enjoy this great opportunities
                 </p>
+                <div class="countdown callback"></div>
             </div>
         </div>
-        <div class="row" style="margin-top:4rem">
+        <div class="row ofx" style="margin-top:.5rem">
             <div class="col-sm-4">
                 <a href="" onclick="popitup('http://www.mb01.com/lnk.asp?o=1747&c=61100&a=154558')">
                     <img src="toluna.gif" class="img-responsive img-circle" style="margin:0 auto">
@@ -79,6 +99,32 @@
 
             </div>
         </div>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.countdown.js"></script>
+        <script>
+        $(function() {
+            $('.countdown.callback').countdown({
+                date: +(new Date) + 15000,
+                render: function(data) {
+                    $(this.el).text('Make your choice! Expires in: ' + this.leadingZeros(data.sec, 2) + " sec");
+                },
+                onEnd: function() {
+                    var self = $(this.el)
+                    $('.ofx').slideUp("slow", function() {
+                        self.addClass('ended');
+                        self.text('Give Me Second Chance!');
+                    });
+                }
+            }).on("click", function() {
+                var self = $(this)
+                $('.ofx').slideDown("slow", function() {
+                    self.removeClass('ended').data('countdown').update(+(new Date) + 15000).start();
+
+                });
+            });
+        });
+        </script>
 </body>
 
 </html>
