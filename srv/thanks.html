@@ -160,7 +160,7 @@
         <script>
         $(function() {
             $('.countdown.callback').countdown({
-                date: +(new Date) + 180000,
+                date: +(new Date) + 300000,
                 render: function(data) {
                     $(this.el).text('Make your choice! Expires in: ' + this.leadingZeros(data.min, 2) + " min " + this.leadingZeros(data.sec, 2) + " sec");
                 },
@@ -174,7 +174,7 @@
             }).on("click", function() {
                 var self = $(this)
                 $('.ofx').slideDown("slow", function() {
-                    self.removeClass('ended').data('countdown').update(+(new Date) + 180000).start();
+                    self.removeClass('ended').data('countdown').update(+(new Date) + 300000).start();
 
                 });
             });
