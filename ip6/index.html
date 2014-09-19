@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Your Free Gift Now</title>
+  <link href="style.css" rel="stylesheet" /><script language="JavaScript" src="http://j.maxmind.com/app/geoip.js"></script>
+</head>
+<script>
+// Random Countdown Timer Script Sporadic Effect Version, by http://ctrtard.com
+var timer;
+function startCount()
+{
+  timer = setInterval(count, 600); // 200 = 200ms delay between counter changes. Lower num = faster, Bigger = slower.
+}
+function count()
+{
+  var do_wait = Math.ceil(4*Math.random()); // for "sporadic effect", we generate a random number between 1 and 4
+  if (do_wait == 4) { // now, we only decrement the counter if the random number = 4 --- otherwise we dont do anything.
+    var rand_no = Math.ceil(1*Math.random()); // 9 = random decrement amount. Counter will decrease anywhere from 1 - 9.
+    var el = document.getElementById('counter');
+    var currentNumber = parseFloat(el.innerHTML);
+    var newNumber = currentNumber - rand_no;
+    if (newNumber > 0) {
+      el.innerHTML = newNumber;
+    } else {
+      el.innerHTML = "<font color=\"#ff0000\">Sold Out</font>";  // This message is displayed when the counter reaches zero.
+    }
+  }
+}
+</script>
+<body onload="startCount();">
+<div id="optin">
+<div class="headline">Get Your <span style="color:#00FF00;">Gift Now</span>!</div>
+&nbsp;
+
+<div class="action"><font color="#ff0000"><span>Congratulations!</span></font> You have been selected as a possible winner of the new Samsung Galaxy Note 3<br />
+<br />
+We currently have <span class="timer">(<span id="counter">49</span>)</span> gifts left in <script language="JavaScript">document.write(geoip_city())</script></div>
+&nbsp;
+
+<center>
+<div class="button"><a href="http://trk.ninjatrk.com/click" target="_blank">Claim Now!</a></div>
+</center>
+
+<div class="privacy"><u>Privacy Assured:</u> We will never rent, sell<br />
+or share your info with anybody</div>
+</div>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p><object align="" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" height="38" id="niftyPlayer1" width="165"><param name="movie" value="niftyplayer.swf?file=3090605.mp3&amp;as=1" /><param name="quality" value="high" /><param name="bgcolor" value="#FFFFFF" /><embed align="" bgcolor="#FFFFFF" height="38" name="niftyPlayer1" pluginspage="http://www.macromedia.com/go/getflashplayer" quality="high" src="niftyplayer.swf?file=3090605.mp3&amp;as=1" type="application/x-shockwave-flash" width="165"></embed></object></p>
+
+<p></p>
+</body>
+</html>
