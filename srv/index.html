@@ -71,13 +71,23 @@
             <div class="col-sm-12 center">
                 <h1>These 5 Companies Will Give You £100 in 15 Minutes or Less</h1>
                 <p class="lead">
-                  enjoy this great opportunities
+                    enjoy this great opportunities
                 </p>
                 <hr>
-                <div class="countdown callback"></div>
             </div>
         </div>
         <div class="ofx">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>
+                        <strong>Every year businesses give away thousands of pounds in free money and gift cards as a way of promoting their websites/products.</strong>
+                    </p>
+                    <p>We’ve put together a list of
+                        <strong style="color:#b00">5 of them who will give you £100 in 15 minutes or less.</strong>
+                    </p>
+                    <p>Some of them are as simple as filling out a form and some of them take a bit more effort, but you can easily knock out all of them in a couple of hours.</p>
+                </div>
+            </div>
             <div class="row" style="margin-top:0rem">
                 <div class="col-sm-4">
                     <div>
@@ -156,31 +166,7 @@
             </div>
         </div>
 
-        <script src="../js/jquery.min.js"></script>
-        <script src="../js/jquery.countdown.js"></script>
         <script>
-        $(function() {
-            $('.countdown.callback').countdown({
-                date: +(new Date) + 300000,
-                render: function(data) {
-                    $(this.el).text('Make your choice! Expires in: ' + this.leadingZeros(data.min, 2) + " min " + this.leadingZeros(data.sec, 2) + " sec");
-                },
-                onEnd: function() {
-                    var self = $(this.el)
-                    $('.ofx').slideUp("slow", function() {
-                        self.addClass('ended');
-                        self.text('Give Me Second Chance!');
-                    });
-                }
-            }).on("click", function() {
-                var self = $(this)
-                $('.ofx').slideDown("slow", function() {
-                    self.removeClass('ended').data('countdown').update(+(new Date) + 300000).start();
-
-                });
-            });
-        });
-
         (function(i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
             i[r] = i[r] || function() {
