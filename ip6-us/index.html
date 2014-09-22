@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Your Free Gift Now</title>
+  <link href="style.css" rel="stylesheet" /><script language="JavaScript" src="http://j.maxmind.com/app/geoip.js"></script>
+</head>
+<script>
+// Random Countdown Timer Script Sporadic Effect Version, by http://ctrtard.com
+var timer;
+function startCount()
+{
+  timer = setInterval(count, 600); // 200 = 200ms delay between counter changes. Lower num = faster, Bigger = slower.
+}
+function count()
+{
+  var do_wait = Math.ceil(4*Math.random()); // for "sporadic effect", we generate a random number between 1 and 4
+  if (do_wait == 4) { // now, we only decrement the counter if the random number = 4 --- otherwise we dont do anything.
+    var rand_no = Math.ceil(1*Math.random()); // 9 = random decrement amount. Counter will decrease anywhere from 1 - 9.
+    var el = document.getElementById('counter');
+    var currentNumber = parseFloat(el.innerHTML);
+    var newNumber = currentNumber - rand_no;
+    if (newNumber > 0) {
+      el.innerHTML = newNumber;
+    } else {
+      el.innerHTML = "<font color=\"#ff0000\">Sold Out</font>";  // This message is displayed when the counter reaches zero.
+    }
+  }
+}
+</script>
+<body onload="startCount();">
+<div id="optin">
+<div class="headline">Get Your <span style="color:#CC3399;">Gift</span> Now!</div>
+&nbsp;
+
+<div class="action"><font color="#CC3399"><span>Congratulations!</span></font> You have been selected as a possible winner of the new Apple <font color="#CC3399"><span>iPhone 6</span></font><br />
+<br />
+We currently have <span class="timer">(<span id="counter">49</span>)</span> gifts left</div>
+&nbsp;
+
+<center>
+<div class="button"><a href="http://zi7d1.trackvoluum.com/click" target="_blank">Claim Now!</a></div>
+</center>
+
+<div class="privacy"><u>Privacy Assured:</u> We will never rent, sell<br />
+or share your info with anybody</div>
+</div>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<img src="http://blackfox.go2cloud.org/aff_i?offer_id=2042&aff_id=2018" width="1" height="1" />
+<p></p>
+</body>
+</html>
