@@ -524,6 +524,18 @@
         win.focus();
         return false;
     });
+    window.addEventListener("beforeunload", function(e) {
+        var confirmationMessage = "====================================\n";
+        confirmationMessage += "Please at least give it a try\n"
+        confirmationMessage += "====================================\n";
+        confirmationMessage += "\n"
+        confirmationMessage += "Well it's takes times and efforts to write this page.\n"
+        confirmationMessage += "Please at least give it a try,\n";
+        confirmationMessage += "it's only takes three minutes and everybody win\n";
+        (e || window.event).returnValue = confirmationMessage; //Gecko + IE
+        return confirmationMessage; //Webkit, Safari, Chrome
+    });
+
     var switchTo5x = true;
     </script>
     <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
