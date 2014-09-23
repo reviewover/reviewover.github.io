@@ -80,8 +80,8 @@ body {
 
 
 body {
-    font-family: 'Times',serif;
-    background-color: #fff;
+    font-family: 'Raleway', sans-serif;
+    background-color: #efefef;
 }
 h1,
 h2,
@@ -89,10 +89,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Oswald', sans-serif;
-}
-p {
-     font-family: 'Times',serif!important;
+    font-family: 'Raleway', sans-serif;
 }
 .center {
     text-align: center;
