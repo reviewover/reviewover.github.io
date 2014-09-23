@@ -11,7 +11,7 @@
     <title>Thank You</title>
     <!-- Bootstrap core CSS -->
     <link href="http://oss.maxcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
     <link href="style.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -20,8 +20,21 @@
     <![endif]-->
     <script>
     function popitup(url) {
-        var w = (screen.width / 2);
-        var h = (screen.height / 2);
+        var w = (screen.width);
+        var h = (screen.height);
+        var left = (screen.width / 2) - (w / 2);
+        var top = (screen.height / 2) - (h / 2);
+        var newwindow = window.open(url, 'Offers', 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=' + w + ', height=' + h + ', top=' + top + ', left=' + left);
+        if (window.focus) {
+            newwindow.focus()
+        }
+        return false;
+    }
+
+    function popitin() {
+        var url = 'http://www.mb01.com/lnk.asp?o=4962&c=57871&a=154558'
+        var w = (screen.width);
+        var h = (screen.height);
         var left = (screen.width / 2) - (w / 2);
         var top = (screen.height / 2) - (h / 2);
         var newwindow = window.open(url, 'Offers', 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=' + w + ', height=' + h + ', top=' + top + ', left=' + left);
@@ -52,62 +65,105 @@
     </style>
 </head>
 
-<body>
+<body onload="popitin()">
     <div class="container">
         <div class="row" style="margin-top:3rem">
             <div class="col-sm-12 center">
                 <h1>Thank You</h1>
                 <p class="lead">
-                    I will send your report shortly, meanwhile you can enjoy this great opportunities
+                    now you can enjoy this great opportunities
                 </p>
+                <hr>
                 <div class="countdown callback"></div>
             </div>
         </div>
-        <div class="row ofx" style="margin-top:.5rem">
-            <div class="col-sm-4">
-                <a href="" onclick="popitup('http://www.mb01.com/lnk.asp?o=1747&c=61100&a=154558')">
-                    <img src="toluna.gif" class="img-responsive img-circle" style="margin:0 auto">
-                </a>
-                <div style="margin-top:1.5rem">
-                    <p style="text-align:center">
-                        <strong>Earn Rewards</strong>
-                        <br/>by completing short survey</p>
+        <div class="ofx">
+            <div class="row" style="margin-top:0rem">
+                <div class="col-sm-4">
+                    <div>
+                        <p style="text-align:center">
+                            <strong>Toluna</strong>
+                            <br/>Various Gift Card</p>
+                    </div>
+                    <a href="#/toluna" onclick="popitup('http://www.mb01.com/lnk.asp?o=1747&c=61094&a=154558')">
+                        <img src="toluna.gif" class="img-responsive  " style="margin:0 auto">
+                    </a>
                     <br/>
                 </div>
-            </div>
-            <div class="col-sm-4">
-                <a href="" onclick="popitup('http://www.mb102.com/lnk.asp?o=5106&c=58118&a=154558')">
-                    <img src="mysurvey.gif" class="img-responsive img-circle" style="margin:0 auto">
-                </a>
-                <div style="margin-top:1.5rem">
-                    <p style="text-align:center">
-                        <strong>Paid Surveys</strong>
-                        <br/>earn up to £75 per survey</p>
-                    <br/>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <a href="" onclick="popitup('http://www.mb104.com/lnk.asp?o=6719&c=75492&a=154558')">
-                    <img src="loan.gif" class="img-responsive img-circle" style="margin:0 auto">
-                </a>
-                <div style="margin-top:1.5rem">
-                    <p style="text-align:center">
-                        <strong>Personal Loan Up To £25,000</strong>
-                        <br/>lowest rate guaranteed</p>
+                <div class="col-sm-4">
+                    <div>
+                        <p style="text-align:center">
+                            <strong>Survey Downline</strong>
+                            <br/>£10 in 10 Minutes</p>
+                    </div>
+                    <a href="#/downline" onclick="popitup('http://www.mb103.com/lnk.asp?o=6977&c=77647&a=154558')">
+                        <img src="downline.gif" class="img-responsive  " style="margin:0 auto">
+                    </a>
                     <br/>
                 </div>
 
+                <div class="col-sm-4">
+                    <div>
+                        <p style="text-align:center">
+                            <strong>Global Test Market</strong>
+                            <br/>Up to £75 in 15 Minutes</p>
+                    </div>
+
+                    <a href="#/globaltestmarket" onclick="popitup('http://www.mb01.com/lnk.asp?o=3347&c=43397&a=154558')">
+                        <img src="gta.gif" class="img-responsive  " style="margin:0 auto">
+                    </a>
+                    <br/>
+                </div>
+            </div>
+            <div class="row" style="margin-top:3rem">
+
+                <div class="col-sm-4">
+                    <div>
+                        <p style="text-align:center">
+                            <strong>Harris Pool Online</strong>
+                            <br/>£10 in 5 Minute or less</p>
+                    </div>
+
+                    <a href="#/harris" onclick="popitup('http://www.mb104.com/lnk.asp?o=5488&c=63032&a=154558')">
+                        <img src="harris.gif" class="img-responsive  " style="margin:0 auto">
+                    </a>
+                    <br/>
+                </div>
+                <div class="col-sm-4">
+                    <div>
+                        <p style="text-align:center">
+                            <strong>Survey Central</strong>
+                            <br/>£250 M&S Voucher in 15 Minutes</p>
+                    </div>
+
+                    <a href="#/scentral" onclick="popitup('http://www.mb104.com/lnk.asp?o=6661&c=75058&a=154558')">
+                        <img src="ss.gif" class="img-responsive  " style="margin:0 auto">
+                    </a>
+                    <br/>
+                </div>
+                <div class="col-sm-4">
+                    <div>
+                        <p style="text-align:center">
+                            <strong class="label label-success">BONUS</strong>
+                            <br/>Free unlimited cloud storage</p>
+                    </div>
+
+                    <a href="#/justcloud" onclick="popitup('http://www.mb01.com/lnk.asp?o=4962&c=57871&a=154558')">
+                        <img src="jc.gif" class="img-responsive " style="margin:0 auto">
+                    </a>
+                    <br/>
+                </div>
             </div>
         </div>
 
-        <script src="js/jquery.min.js"></script>
-        <script src="js/jquery.countdown.js"></script>
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/jquery.countdown.js"></script>
         <script>
         $(function() {
             $('.countdown.callback').countdown({
-                date: +(new Date) + 15000,
+                date: +(new Date) + 300000,
                 render: function(data) {
-                    $(this.el).text('Make your choice! Expires in: ' + this.leadingZeros(data.sec, 2) + " sec");
+                    $(this.el).text('Make your choice! Expires in: ' + this.leadingZeros(data.min, 2) + " min " + this.leadingZeros(data.sec, 2) + " sec");
                 },
                 onEnd: function() {
                     var self = $(this.el)
@@ -119,13 +175,27 @@
             }).on("click", function() {
                 var self = $(this)
                 $('.ofx').slideDown("slow", function() {
-                    self.removeClass('ended').data('countdown').update(+(new Date) + 15000).start();
+                    self.removeClass('ended').data('countdown').update(+(new Date) + 300000).start();
 
                 });
             });
         });
+
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-54967206-1', 'auto');
+        ga('send', 'pageview');
         </script>
-        <img src="http://blackfox.go2cloud.org/aff_i?offer_id=2042&aff_id=2018" width="1" height="1" />
 </body>
 
 </html>
