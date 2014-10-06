@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+    <title>Jodoh Gak Usah Diramal, Cari Aja Disini</title>
+    <link href="http://oss.maxcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <!--[if lt IE 9]>
+      <script src="http://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="container">
+        <div class="row ld-adcopy">
+            <h1 class="center-text text-center">BIRO JODOH DENGAN AKURASI TERTINGGI SAAT INI
+                <br>
+                <small>DAPATKAN KEANGGOTAAN EXCLUSIVE & NIKMATI BERBAGAI BENEFIT</small>
+            </h1>
+            <hr>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="img/3.jpg" class="img-responsive img-thumbnail ld-img">
+            </div>
+            <div class="col-md-6">
+
+                <div class="row">
+                    <div class="ld-pitch">
+                        <p class='lead ld-lead'>
+                            Segera tinggalkan laman ini apabila Anda tidak mempunyai komitmen untuk membina hubungan yang serius.
+                        </p>
+                        <p>Setiap hari ratusan member kami berhasil menemukan pasangan dan melangkah ke tahap hubungan yang lebih lanjut.
+                        </p>
+                        <p>Dengan menggunakan metode pencocokan yang unik dan pemahaman akan kultur
+                            <strong>Indonesia</strong>, kami berhasil membantu jutaan anggota menemukan pasangan ideal setiap tahunya.</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <p>Sebelum kami mengizinkan anda untuk mengetahui
+                        <strong>siapa kami</strong>, jawablah 3 pertanyaan singkat berikut.</p>
+                    <div class="survey well">
+                        <div class="q1">
+                            <p>
+                                1. Apakah anda berusia setidaknya 18 tahun?
+                            </p>
+                            <buton class="btn btn-default click-1">Ya</buton>
+                            <buton class="btn btn-default click-1">Tidak</buton>
+                        </div>
+                        <div class="q2" style="display:none">
+                            <p>
+                                2. Apakah anda mempunyai komitmen untuk membina hubungan serius?
+                            </p>
+                            <buton class="btn btn-default click-2">Ya</buton>
+                            <buton class="btn btn-default click-2">Tidak</buton>
+                        </div>
+                        <div class="q3" style="display:none">
+                            <p>
+                                3. Apakah anda tertarik untuk berkenalan dengan anggota yang berdomisili di kota yang sama dengan anda?
+                            </p>
+                            <buton class="btn btn-default click-3">Ya</buton>
+                            <buton class="btn btn-default click-3">Tidak</buton>
+                        </div>
+                        <div class="q4" style="display:none">
+                            <div class="verify">
+                                <img src="loading.gif" class="loader">
+                            </div>
+                            <div class="result" style="display:none">
+                                <strong>Berhasil anggota dengan lokasi kurang dari 5 KM.</strong>
+                                <ul style="unstyled-list">
+                                    <li>93&nbsp;&nbsp;Pria</li>
+                                    <li>146&nbsp;Wanita</li>
+                                </ul>
+                                <em>Kembali kami ingatkan, jangan mendaftar apabila anda tidak serius!</em>
+                            </div>
+
+                            <buton class="btn btn-default register" style="display:none">Daftar Sekarang</buton>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <hr>
+            <ul class="list-inline pull-right">
+                <li><a href="http://www.reviewover.com/privasi.html">Privasi</a>
+                </li>
+                <li><a href="http://www.reviewover.com/ketentuan.html">Ketentuan</a>
+                </li>
+                <li><a href="http://www.reviewover.com/kuki.html">Kuki</a>
+                </li>
+                <li><a href="http://www.reviewover.com/iklan.html">Iklan</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script>
+    $(".click-1").click(function() {
+        $('.q1').hide();
+        $('.q2').show();
+    });
+    $(".click-2").click(function() {
+        $('.q2').hide();
+        $('.q3').show();
+    });
+    $(".click-3").click(function() {
+        $('.q3').hide();
+        $('.q4').show(function() {
+            setTimeout(function() {
+                $('.verify').hide(function() {
+                    $('.result').show(function() {
+                        setTimeout(function() {
+                            $('.register').show();
+                        }, 1000);
+                    });
+                });
+            }, 2000);
+        });
+    });
+
+    $('.register').click(function() {
+        window.location.href = "http://google.com";
+        return false;
+    });
+    </script>
+</body>
+
+</html>
