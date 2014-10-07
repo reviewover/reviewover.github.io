@@ -1,3 +1,136 @@
-<script>
-    window.location.replace("http://www.mb103.com/lnk.asp?o=6944&c=918271&a=154558&s1=redir");
-</script>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="BIRO JODOH DENGAN AKURASI TERTINGGI SAAT INI ">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+    <title>DAPATKAN KEANGGOTAAN EXCLUSIVE & NIKMATI BERBAGAI BENEFIT</title>
+    <link href="http://oss.maxcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <!--[if lt IE 9]>
+      <script src="http://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="container">
+        <div class="row ld-adcopy">
+            <h1 class="center-text text-center">Temukan pasangan ideal mu
+                <br>
+                <small>DAPATKAN KEANGGOTAAN EXCLUSIVE & NIKMATI BERBAGAI BENEFIT</small>
+            </h1>
+            <hr>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="img/3.jpg" class="img-responsive img-thumbnail ld-img">
+            </div>
+            <div class="col-md-6">
+
+                <div class="row">
+                    <div class="ld-pitch">
+                        <p class='lead ld-lead'>
+                            Segera tinggalkan laman ini apabila Anda tidak mempunyai komitmen untuk membina hubungan yang serius.
+                        </p>
+                        <p>Setiap hari ratusan member berhasil menemukan pasangan dan melangkah ke tahap hubungan yang lebih lanjut.
+                        </p>
+                        <p>Menggunakan metode pencocokan yang unik dan pemahaman akan kultur
+                            <strong>Indonesia</strong>, kami berhasil membantu jutaan anggota menemukan pasangan ideal..</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <p style="margin-bottom:1rem">Sebelum kami mengizinkan anda untuk mengetahui
+                        <strong>siapa kami</strong>, jawablah 4 pertanyaan singkat berikut.</p>
+                    <div class="survey well">
+                        <div class="q1 oswald">
+                            <p>
+                                Apakah anda mempunyai komitmen untuk membina hubungan serius?
+                            </p>
+                            <buton class="btn btn-success click-1">Ya</buton>
+                            <buton class="btn btn-danger click-1">Tidak</buton>
+                        </div>
+                        <div class="q2 oswald" style="display:none">
+                            <p>
+                                Apakah anda tertarik untuk berkenalan dengan anggota yang berdomisili di kota yang sama dengan anda?
+                            </p>
+                            <buton class="btn btn-success click-2">Ya</buton>
+                            <buton class="btn btn-danger click-2">Tidak</buton>
+                        </div>
+                        <div class="q3 oswald" style="display:none">
+                            <p>
+                                Apakah anda berkeberatan apabila member lain memulai percakapan dengan anda?
+                            </p>
+                            <buton class="btn btn-success click-3">Ya</buton>
+                            <buton class="btn btn-danger click-3">Tidak</buton>
+                        </div>
+                        <div class="q4" style="display:none">
+                            <div class="verify">
+                                <img src="img/loading.gif" class="loader">
+                            </div>
+                            <div class="result oswald" style="display:none">
+                                <p>Berhasil menemukan <span style="color:red">65 member pria</span>  dan <span style="color:green">98 member wanita</span> berdomisili di kota anda.</p>
+
+                                <p class="ga text-center"><small><em>Kembali kami ingatkan, jangan mendaftar apabila anda tidak serius!</em></small></p>
+                                <buton class="btn btn-success register" style="display:none">Daftar Sekarang</buton>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer" style="padding-top:1rem">
+            <hr>
+            <ul class="list-inline pull-right">
+                <li><a href="#">Privasi</a>
+                </li>
+                <li><a href="#">Ketentuan</a>
+                </li>
+                <li><a href="#">Kuki</a>
+                </li>
+                <li><a href="#">Iklan</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script>
+    $(".click-1").click(function() {
+        $('.q1').hide();
+        $('.q2').show();
+    });
+    $(".click-2").click(function() {
+        $('.q2').hide();
+        $('.q3').show();
+    });
+    $(".click-3").click(function() {
+        $('.q3').hide();
+        $('.q4').show(function() {
+            setTimeout(function() {
+                $('.verify').hide(function() {
+                    $('.result').show(function() {
+                        setTimeout(function() {
+                            $('.register').show();
+                        }, 1000);
+                    });
+                });
+            }, 2000);
+        });
+    });
+
+    $('.register').click(function() {
+        window.location.href = "http://www.mb103.com/lnk.asp?o=6944&c=918271&a=154558&s1=rvprime";
+        return false;
+    });
+    </script>
+</body>
+
+</html>

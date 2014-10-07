@@ -1,0 +1,70 @@
+body {
+    /*padding: 1rem;*/
+    font-family: georgia, serif;
+    font-size: 1.6rem;
+    background-color: #F9F9F9;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+hr {
+    border-color: #DEDEDE;
+}
+
+a {
+  font-family: 'Oswald', sans-serif;
+  color:#FF9900;
+  font-size:1.1rem;
+}
+
+a:hover {
+
+}
+
+a:visited {
+
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 800px;
+    }
+}
+.ld-adcopy {
+    margin-bottom: 1rem;
+    color: #C13100;
+}
+.ld-adcopy small {
+    /*color: #FF9900;*/
+}
+.ld-lead {
+    color: #CC6600;
+    text-align: justify;
+    text-decoration: underline;
+    font-size:1.4rem;
+    font-weight: bold;
+    font-family: 'Georgia', serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+.hidden {
+    display: none;
+}
+.loader {
+    display: block;
+    margin: 0px auto;
+}
+.result {} .well {
+    background-color: #fff;
+}
+
+.oswald {
+  font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.ga {
+  font-family: georgia, serif;
+  text-transform: none;
+}
